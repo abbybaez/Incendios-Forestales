@@ -1,0 +1,118 @@
+ body {
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            margin-top: 100px;
+        }
+
+        header {
+            margin-top: 0px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white; 
+            z-index: 1000; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            position: fixed;
+            background-color: #e6a4e2;
+            color: white;
+            padding: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            font-size: 2.5em;
+        }
+        
+        nav {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 90px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white; 
+            z-index: 1000; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+
+        header img {
+           max-width: 80%;
+           height: auto;
+           border-radius: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            background-color: #864886;
+        }
+
+        nav a {
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: white;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #be64b7;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            padding: 20px;
+            animation: fadeIn 1s;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        .section-title {
+            margin-top: 150px;
+            font-size: 2em;
+            color: #b91b85;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 80%;
+            text-align: center;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            
+        }
+        ul {
+            list-style-type: circle;
+            padding-left: 40px;
+        }
+
+        li{
+            margin-bottom: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
